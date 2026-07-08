@@ -32,7 +32,7 @@ ai-directory/
 ├── scripts/
 │   ├── scraper.py         # Collects new tools from sources
 │   └── build.py           # Generates static HTML site
-├── site/                  # Generated static site (deployed)
+├── docs/                  # Generated static site (GitHub Pages deploys from here)
 │   ├── index.html
 │   ├── sitemap.xml
 │   └── robots.txt

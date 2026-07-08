@@ -22,7 +22,7 @@ from datetime import datetime
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 DATA_DIR = Path(__file__).parent.parent / "data"
-OUT_DIR = Path(__file__).parent.parent / "site"
+OUT_DIR = Path(__file__).parent.parent / "docs"
 
 SITE_NAME = "AI Toolkit"
 SITE_TAGLINE = "The AI tools directory for every profession"
