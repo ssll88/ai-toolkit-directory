@@ -1,0 +1,467 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-07-08T00:00:00Z",
+  "tools": [
+    {
+      "id": "procore",
+      "name": "Procore",
+      "tagline": "Construction management platform with AI insights",
+      "description": "Leading construction management platform with AI-powered project insights, predictive analytics, and automated workflows for construction teams.",
+      "url": "https://www.procore.com",
+      "category": "construction",
+      "pricing": "paid",
+      "features": [
+        "Project management",
+        "AI insights",
+        "Predictive analytics",
+        "Document control"
+      ],
+      "rating": 4.5,
+      "added": "2026-07-08",
+      "tags": [
+        "enterprise",
+        "bim",
+        "field management"
+      ]
+    },
+    {
+      "id": "autodesk-forma",
+      "name": "Autodesk Forma",
+      "tagline": "AI for early-stage building design and urban planning",
+      "description": "Uses AI to help architects optimize building designs for sunlight, wind, noise, and density in early planning stages.",
+      "url": "https://www.autodesk.com/products/forma/overview",
+      "category": "construction",
+      "pricing": "paid",
+      "features": [
+        "AI design optimization",
+        "Wind/sun analysis",
+        "Density planning",
+        "3D modeling"
+      ],
+      "rating": 4.1,
+      "added": "2026-07-08",
+      "tags": [
+        "architecture",
+        "urban planning"
+      ]
+    },
+    {
+      "id": "buildx-ai",
+      "name": "Buildx",
+      "tagline": "AI for construction cost estimation and bidding",
+      "description": "AI tool for contractors to generate accurate cost estimates, analyze bid documents, and reduce bidding risk.",
+      "url": "https://www.buildx.ai",
+      "category": "construction",
+      "pricing": "paid",
+      "features": [
+        "AI cost estimation",
+        "Bid analysis",
+        "Risk assessment",
+        "Quantity takeoff"
+      ],
+      "rating": 4.0,
+      "added": "2026-07-08",
+      "tags": [
+        "cost estimation",
+        "bidding",
+        "contractor"
+      ]
+    },
+    {
+      "id": "clickup-brain",
+      "name": "ClickUp Brain",
+      "tagline": "AI-powered project management and productivity",
+      "description": "AI assistant built into ClickUp for task summarization, project progress updates, automated reporting, and intelligent task creation.",
+      "url": "https://clickup.com/brain",
+      "category": "project-management",
+      "pricing": "freemium",
+      "features": [
+        "AI task creation",
+        "Progress summaries",
+        "Automated reports",
+        "Natural language search"
+      ],
+      "rating": 4.3,
+      "added": "2026-07-08",
+      "tags": [
+        "teams",
+        "productivity",
+        "automation"
+      ]
+    },
+    {
+      "id": "monday-ai",
+      "name": "Monday.com AI",
+      "tagline": "AI features for project and work management",
+      "description": "AI capabilities including automated task summarization, sentiment analysis, formula generation, and smart recommendations.",
+      "url": "https://monday.com",
+      "category": "project-management",
+      "pricing": "freemium",
+      "features": [
+        "AI task summaries",
+        "Formula generation",
+        "Sentiment analysis",
+        "Smart recommendations"
+      ],
+      "rating": 4.3,
+      "added": "2026-07-08",
+      "tags": [
+        "teams",
+        "productivity",
+        "work management"
+      ]
+    },
+    {
+      "id": "fireflies-ai",
+      "name": "Fireflies.ai",
+      "tagline": "AI meeting assistant with transcription and summaries",
+      "description": "Joins your meetings, transcribes them, generates AI summaries, action items, and searchable transcripts. Works with Zoom, Teams, Meet.",
+      "url": "https://fireflies.ai",
+      "category": "project-management",
+      "pricing": "freemium",
+      "features": [
+        "Meeting transcription",
+        "AI summaries",
+        "Action items",
+        "Searchable transcripts"
+      ],
+      "rating": 4.4,
+      "added": "2026-07-08",
+      "tags": [
+        "meetings",
+        "transcription",
+        "productivity"
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "tagline": "AI image generation for designers and creatives",
+      "description": "AI image generation tool that creates high-quality images from text descriptions. Popular for concept art, mockups, and creative exploration.",
+      "url": "https://www.midjourney.com",
+      "category": "design",
+      "pricing": "paid",
+      "features": [
+        "Text-to-image",
+        "Style control",
+        "Variations",
+        "Upscaling"
+      ],
+      "rating": 4.7,
+      "added": "2026-07-08",
+      "tags": [
+        "image generation",
+        "concept art",
+        "creative"
+      ]
+    },
+    {
+      "id": "figma-ai",
+      "name": "Figma AI",
+      "tagline": "AI features for design collaboration",
+      "description": "Text-to-design generation, automatic layer renaming, content generation, and visual search across design files.",
+      "url": "https://www.figma.com",
+      "category": "design",
+      "pricing": "freemium",
+      "features": [
+        "Text-to-design",
+        "Auto layer rename",
+        "Content generation",
+        "Visual search"
+      ],
+      "rating": 4.5,
+      "added": "2026-07-08",
+      "tags": [
+        "ui design",
+        "collaboration",
+        "prototype"
+      ]
+    },
+    {
+      "id": "tome-app",
+      "name": "Tome",
+      "tagline": "AI presentation generator",
+      "description": "Uses AI to generate polished presentations from text prompts, complete with layouts, images, and data visualizations.",
+      "url": "https://tome.app",
+      "category": "design",
+      "pricing": "freemium",
+      "features": [
+        "AI presentations",
+        "Auto layouts",
+        "Image generation",
+        "Data charts"
+      ],
+      "rating": 3.9,
+      "added": "2026-07-08",
+      "tags": [
+        "presentations",
+        "slides",
+        "business"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "tagline": "The world's most popular AI assistant",
+      "description": "Conversational AI assistant capable of writing, analysis, coding, research, and more. The dominant general-purpose AI tool.",
+      "url": "https://chat.openai.com",
+      "category": "writing",
+      "pricing": "freemium",
+      "features": [
+        "Conversational AI",
+        "Code generation",
+        "Document analysis",
+        "Web browsing"
+      ],
+      "rating": 4.8,
+      "added": "2026-07-08",
+      "tags": [
+        "general purpose",
+        "assistant",
+        "popular"
+      ]
+    },
+    {
+      "id": "claude-ai",
+      "name": "Claude (Anthropic)",
+      "tagline": "AI assistant excelling at analysis and long documents",
+      "description": "Known for strong reasoning, long-context document analysis, and nuanced writing. Popular for research and professional writing.",
+      "url": "https://claude.ai",
+      "category": "writing",
+      "pricing": "freemium",
+      "features": [
+        "200K token context",
+        "Document analysis",
+        "Code generation",
+        "Nuanced writing"
+      ],
+      "rating": 4.7,
+      "added": "2026-07-08",
+      "tags": [
+        "general purpose",
+        "analysis",
+        "research"
+      ]
+    },
+    {
+      "id": "sudowrite",
+      "name": "Sudowrite",
+      "tagline": "AI writing assistant for fiction authors",
+      "description": "AI tool for fiction writers offering story planning, character development, prose generation, and revision tools.",
+      "url": "https://www.sudowrite.com",
+      "category": "writing",
+      "pricing": "paid",
+      "features": [
+        "Story planning",
+        "Character arcs",
+        "Prose generation",
+        "Style matching"
+      ],
+      "rating": 4.0,
+      "added": "2026-07-08",
+      "tags": [
+        "fiction",
+        "creative writing",
+        "storytelling"
+      ]
+    },
+    {
+      "id": "jasper-ai",
+      "name": "Jasper AI",
+      "tagline": "AI content platform for marketing teams",
+      "description": "AI content generation platform for marketers with brand voice customization, team collaboration, and templates.",
+      "url": "https://www.jasper.ai",
+      "category": "marketing",
+      "pricing": "paid",
+      "features": [
+        "Brand voice",
+        "Content templates",
+        "Team collaboration",
+        "SEO mode"
+      ],
+      "rating": 4.2,
+      "added": "2026-07-08",
+      "tags": [
+        "marketing",
+        "copywriting",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "surfer-seo",
+      "name": "Surfer SEO",
+      "tagline": "AI-powered on-page SEO optimization",
+      "description": "Analyzes top-ranking pages and provides data-driven recommendations for content optimization and SERP analysis.",
+      "url": "https://surferseo.com",
+      "category": "marketing",
+      "pricing": "paid",
+      "features": [
+        "Content editor",
+        "SERP analyzer",
+        "Keyword research",
+        "Audit tool"
+      ],
+      "rating": 4.3,
+      "added": "2026-07-08",
+      "tags": [
+        "seo",
+        "content optimization",
+        "marketing"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "tagline": "The AI code editor built for productivity",
+      "description": "AI-powered code editor based on VS Code that helps developers write, refactor, and understand code faster.",
+      "url": "https://cursor.sh",
+      "category": "code",
+      "pricing": "freemium",
+      "features": [
+        "AI pair programming",
+        "Codebase chat",
+        "Inline edits",
+        "Multi-file refactoring"
+      ],
+      "rating": 4.6,
+      "added": "2026-07-08",
+      "tags": [
+        "ide",
+        "pair programming",
+        "productivity"
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "tagline": "AI pair programmer integrated into your IDE",
+      "description": "Uses OpenAI models to suggest code completions and entire functions in real-time. Integrates with VS Code, JetBrains, Neovim.",
+      "url": "https://github.com/features/copilot",
+      "category": "code",
+      "pricing": "paid",
+      "features": [
+        "Code completion",
+        "Chat",
+        "PR summaries",
+        "CLI assistance"
+      ],
+      "rating": 4.5,
+      "added": "2026-07-08",
+      "tags": [
+        "ide",
+        "autocomplete",
+        "github"
+      ]
+    },
+    {
+      "id": "buildt",
+      "name": "Buildt",
+      "tagline": "AI code search and codebase understanding",
+      "description": "AI tool for semantic codebase search, finding relevant code, and generating explanations across large repositories.",
+      "url": "https://www.buildt.ai",
+      "category": "code",
+      "pricing": "freemium",
+      "features": [
+        "Semantic code search",
+        "Codebase chat",
+        "Dependency mapping",
+        "AI explanations"
+      ],
+      "rating": 3.8,
+      "added": "2026-07-08",
+      "tags": [
+        "code search",
+        "codebase understanding",
+        "developer tools"
+      ]
+    },
+    {
+      "id": "tableau-pulse",
+      "name": "Tableau Pulse",
+      "tagline": "AI-driven analytics and insights delivery",
+      "description": "Uses AI to automatically surface personalized metrics and insights, making data analytics accessible without SQL expertise.",
+      "url": "https://www.tableau.com/products/pulse",
+      "category": "data",
+      "pricing": "paid",
+      "features": [
+        "AI insights",
+        "Automated metrics",
+        "Smart alerts",
+        "Natural language queries"
+      ],
+      "rating": 4.2,
+      "added": "2026-07-08",
+      "tags": [
+        "business intelligence",
+        "dashboard",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "tagline": "AI-powered video editing and generation",
+      "description": "AI video platform offering text-to-video, video-to-video, background removal, motion tracking, and more.",
+      "url": "https://runwayml.com",
+      "category": "video",
+      "pricing": "freemium",
+      "features": [
+        "Text-to-video",
+        "Green screen",
+        "Motion brush",
+        "Inpainting"
+      ],
+      "rating": 4.4,
+      "added": "2026-07-08",
+      "tags": [
+        "video generation",
+        "filmmaking",
+        "creative"
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "tagline": "AI voice generation and text-to-speech",
+      "description": "Leading AI voice platform offering high-quality text-to-speech, voice cloning, and multilingual voice generation.",
+      "url": "https://elevenlabs.io",
+      "category": "video",
+      "pricing": "freemium",
+      "features": [
+        "Text-to-speech",
+        "Voice cloning",
+        "Multilingual",
+        "Real-time voice"
+      ],
+      "rating": 4.6,
+      "added": "2026-07-08",
+      "tags": [
+        "voice",
+        "audio",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "hubspot-ai",
+      "name": "HubSpot AI",
+      "tagline": "AI tools for sales, marketing, and service",
+      "description": "AI features for lead scoring, email writing, meeting scheduling, and customer sentiment analysis across the CRM.",
+      "url": "https://www.hubspot.com",
+      "category": "sales",
+      "pricing": "freemium",
+      "features": [
+        "Lead scoring",
+        "AI email writer",
+        "Meeting assistant",
+        "Sentiment analysis"
+      ],
+      "rating": 4.4,
+      "added": "2026-07-08",
+      "tags": [
+        "crm",
+        "inbound",
+        "sales automation"
+      ]
+    }
+  ]
+}

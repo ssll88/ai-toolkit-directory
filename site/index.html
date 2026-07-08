@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Toolkit — The AI tools directory for every profession</title>
+  <meta name="description" content="Discover the best AI tools for construction, project management, design, coding, marketing and more. Updated daily.">
+  <style>
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #13131a;
+  --bg-hover: #1a1a24;
+  --text: #e4e4e7;
+  --text-dim: #71717a;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --border: #27272a;
+  --free: #22c55e;
+  --paid: #f59e0b;
+  --freemium: #3b82f6;
+  --radius: 12px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--accent-hover); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  position: sticky; top: 0;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+.header-inner { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--text); }
+.logo span { color: var(--accent); }
+.header-nav { display: flex; gap: 24px; align-items: center; }
+.header-nav a { color: var(--text-dim); font-size: 0.9rem; font-weight: 500; }
+.header-nav a:hover { color: var(--text); }
+
+/* Search */
+.search-wrap { margin: 48px 0 24px; }
+.search-wrap h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 8px; }
+.search-wrap p { color: var(--text-dim); margin-bottom: 24px; font-size: 1.1rem; }
+.search-box {
+  width: 100%; padding: 16px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text); font-size: 1rem;
+  transition: border-color 0.2s;
+}
+.search-box:focus { outline: none; border-color: var(--accent); }
+.search-box::placeholder { color: var(--text-dim); }
+
+/* Category pills */
+.cat-pills { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0; }
+.cat-pill {
+  padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;
+  background: var(--bg-card); border: 1px solid var(--border); color: var(--text-dim);
+  cursor: pointer; transition: all 0.2s; white-space: nowrap;
+}
+.cat-pill:hover { border-color: var(--accent); color: var(--text); }
+.cat-pill.active { background: var(--accent); border-color: var(--accent); color: white; }
+
+/* Stats bar */
+.stats-bar { display: flex; gap: 32px; margin: 24px 0; padding: 16px 0; border-bottom: 1px solid var(--border); }
+.stat-item { display: flex; flex-direction: column; }
+.stat-num { font-size: 1.5rem; font-weight: 800; color: var(--text); }
+.stat-label { font-size: 0.8rem; color: var(--text-dim); }
+
+/* Tool cards */
+.tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; margin: 24px 0 64px; }
+.tool-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+  transition: all 0.2s; display: flex; flex-direction: column; gap: 8px;
+}
+.tool-card:hover { background: var(--bg-hover); border-color: var(--accent); transform: translateY(-2px); }
+.tool-header { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.tool-name { font-size: 1.1rem; font-weight: 700; }
+.tool-cat { font-size: 0.75rem; color: var(--text-dim); }
+.tool-tagline { color: var(--text-dim); font-size: 0.9rem; }
+.tool-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+.tool-tag { font-size: 0.7rem; padding: 2px 8px; border-radius: 4px; background: var(--bg); color: var(--text-dim); }
+.tool-footer { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 8px; }
+.tool-link { font-size: 0.85rem; font-weight: 600; }
+.pricing-badge { font-size: 0.7rem; padding: 2px 10px; border-radius: 4px; font-weight: 600; text-transform: uppercase; }
+.pricing-badge.free { background: rgba(34,197,94,0.15); color: var(--free); }
+.pricing-badge.paid { background: rgba(245,158,11,0.15); color: var(--paid); }
+.pricing-badge.freemium { background: rgba(59,130,246,0.15); color: var(--freemium); }
+.pricing-badge.unknown { background: rgba(113,113,122,0.15); color: var(--text-dim); }
+
+/* Footer */
+footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: center; color: var(--text-dim); font-size: 0.85rem; }
+footer a { color: var(--text-dim); }
+
+/* Category page */
+.cat-header { margin: 48px 0 24px; }
+.cat-header h1 { font-size: 2rem; display: flex; align-items: center; gap: 12px; }
+.cat-header p { color: var(--text-dim); margin-top: 8px; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .tools-grid { grid-template-columns: 1fr; }
+  .search-wrap h1 { font-size: 1.8rem; }
+  .stats-bar { gap: 16px; }
+}
+
+/* No results */
+.no-results { text-align: center; padding: 48px; color: var(--text-dim); }
+</style>
+</head>
+<body>
+<header>
+  <div class="container header-inner">
+    <a href="/" class="logo">AI<span>Toolkit</span></a>
+    <nav class="header-nav"><a href="/">All Tools</a></nav>
+  </div>
+</header>
+<div class="container">
+  <div class="search-wrap">
+    <h1>AI Tools for Every Profession</h1>
+    <p>21 curated tools across 14 categories — updated daily by AI</p>
+    <input type="text" class="search-box" id="search" placeholder="Search AI tools... (e.g. 'construction', 'writing', 'code')">
+  </div>
+  <div class="cat-pills" id="catPills">
+    <button class="cat-pill active" data-filter="all">All</button>
+      <button class="cat-pill" data-filter="construction">🏗️ Construction (3)</button>
+      <button class="cat-pill" data-filter="project-management">📊 Project Management (3)</button>
+      <button class="cat-pill" data-filter="design">🎨 Design (3)</button>
+      <button class="cat-pill" data-filter="writing">✍️ Writing (3)</button>
+      <button class="cat-pill" data-filter="marketing">📈 Marketing (2)</button>
+      <button class="cat-pill" data-filter="code">💻 Code (3)</button>
+      <button class="cat-pill" data-filter="data">📐 Data (1)</button>
+      <button class="cat-pill" data-filter="video">🎬 Video (2)</button>
+      <button class="cat-pill" data-filter="sales">💰 Sales (1)</button>
+
+  </div>
+  <div class="stats-bar">
+    <div class="stat-item"><span class="stat-num">21</span><span class="stat-label">Total Tools</span></div>
+    <div class="stat-item"><span class="stat-num">14</span><span class="stat-label">Categories</span></div>
+    <div class="stat-item"><span class="stat-num">0</span><span class="stat-label">Free</span></div>
+    <div class="stat-item"><span class="stat-num">9</span><span class="stat-label">Paid</span></div>
+  </div>
+  <div class="tools-grid" id="toolsGrid">
+    <div class="tool-card" data-name="chatgpt" data-category="writing" data-tags="general purpose assistant popular">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">ChatGPT</div>
+      <div class="tool-cat">✍️ Writing & Content</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">The world's most popular AI assistant</div>
+  <div class="tool-tags"><span class="tool-tag">Conversational AI</span><span class="tool-tag">Code generation</span><span class="tool-tag">Document analysis</span><span class="tool-tag">Web browsing</span><span class="tool-tag">general purpose</span><span class="tool-tag">assistant</span><span class="tool-tag">popular</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★★</span>
+    <a href="https://chat.openai.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="midjourney" data-category="design" data-tags="image generation concept art creative">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Midjourney</div>
+      <div class="tool-cat">🎨 Design & Creative</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI image generation for designers and creatives</div>
+  <div class="tool-tags"><span class="tool-tag">Text-to-image</span><span class="tool-tag">Style control</span><span class="tool-tag">Variations</span><span class="tool-tag">Upscaling</span><span class="tool-tag">image generation</span><span class="tool-tag">concept art</span><span class="tool-tag">creative</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★★</span>
+    <a href="https://www.midjourney.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="claude (anthropic)" data-category="writing" data-tags="general purpose analysis research">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Claude (Anthropic)</div>
+      <div class="tool-cat">✍️ Writing & Content</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI assistant excelling at analysis and long documents</div>
+  <div class="tool-tags"><span class="tool-tag">200K token context</span><span class="tool-tag">Document analysis</span><span class="tool-tag">Code generation</span><span class="tool-tag">Nuanced writing</span><span class="tool-tag">general purpose</span><span class="tool-tag">analysis</span><span class="tool-tag">research</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★★</span>
+    <a href="https://claude.ai" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="cursor" data-category="code" data-tags="ide pair programming productivity">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Cursor</div>
+      <div class="tool-cat">💻 Code & Development</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">The AI code editor built for productivity</div>
+  <div class="tool-tags"><span class="tool-tag">AI pair programming</span><span class="tool-tag">Codebase chat</span><span class="tool-tag">Inline edits</span><span class="tool-tag">Multi-file refactoring</span><span class="tool-tag">ide</span><span class="tool-tag">pair programming</span><span class="tool-tag">productivity</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★★</span>
+    <a href="https://cursor.sh" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="elevenlabs" data-category="video" data-tags="voice audio accessibility">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">ElevenLabs</div>
+      <div class="tool-cat">🎬 Video & Animation</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI voice generation and text-to-speech</div>
+  <div class="tool-tags"><span class="tool-tag">Text-to-speech</span><span class="tool-tag">Voice cloning</span><span class="tool-tag">Multilingual</span><span class="tool-tag">Real-time voice</span><span class="tool-tag">voice</span><span class="tool-tag">audio</span><span class="tool-tag">accessibility</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★★</span>
+    <a href="https://elevenlabs.io" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="procore" data-category="construction" data-tags="enterprise bim field management">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Procore</div>
+      <div class="tool-cat">🏗️ Construction & Architecture</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">Construction management platform with AI insights</div>
+  <div class="tool-tags"><span class="tool-tag">Project management</span><span class="tool-tag">AI insights</span><span class="tool-tag">Predictive analytics</span><span class="tool-tag">Document control</span><span class="tool-tag">enterprise</span><span class="tool-tag">bim</span><span class="tool-tag">field management</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.procore.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="figma ai" data-category="design" data-tags="ui design collaboration prototype">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Figma AI</div>
+      <div class="tool-cat">🎨 Design & Creative</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI features for design collaboration</div>
+  <div class="tool-tags"><span class="tool-tag">Text-to-design</span><span class="tool-tag">Auto layer rename</span><span class="tool-tag">Content generation</span><span class="tool-tag">Visual search</span><span class="tool-tag">ui design</span><span class="tool-tag">collaboration</span><span class="tool-tag">prototype</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.figma.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="github copilot" data-category="code" data-tags="ide autocomplete github">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">GitHub Copilot</div>
+      <div class="tool-cat">💻 Code & Development</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI pair programmer integrated into your IDE</div>
+  <div class="tool-tags"><span class="tool-tag">Code completion</span><span class="tool-tag">Chat</span><span class="tool-tag">PR summaries</span><span class="tool-tag">CLI assistance</span><span class="tool-tag">ide</span><span class="tool-tag">autocomplete</span><span class="tool-tag">github</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://github.com/features/copilot" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="fireflies.ai" data-category="project-management" data-tags="meetings transcription productivity">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Fireflies.ai</div>
+      <div class="tool-cat">📊 Project Management</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI meeting assistant with transcription and summaries</div>
+  <div class="tool-tags"><span class="tool-tag">Meeting transcription</span><span class="tool-tag">AI summaries</span><span class="tool-tag">Action items</span><span class="tool-tag">Searchable transcripts</span><span class="tool-tag">meetings</span><span class="tool-tag">transcription</span><span class="tool-tag">productivity</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://fireflies.ai" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="runway" data-category="video" data-tags="video generation filmmaking creative">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Runway</div>
+      <div class="tool-cat">🎬 Video & Animation</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI-powered video editing and generation</div>
+  <div class="tool-tags"><span class="tool-tag">Text-to-video</span><span class="tool-tag">Green screen</span><span class="tool-tag">Motion brush</span><span class="tool-tag">Inpainting</span><span class="tool-tag">video generation</span><span class="tool-tag">filmmaking</span><span class="tool-tag">creative</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://runwayml.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="hubspot ai" data-category="sales" data-tags="crm inbound sales automation">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">HubSpot AI</div>
+      <div class="tool-cat">💰 Sales & CRM</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI tools for sales, marketing, and service</div>
+  <div class="tool-tags"><span class="tool-tag">Lead scoring</span><span class="tool-tag">AI email writer</span><span class="tool-tag">Meeting assistant</span><span class="tool-tag">Sentiment analysis</span><span class="tool-tag">crm</span><span class="tool-tag">inbound</span><span class="tool-tag">sales automation</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.hubspot.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="clickup brain" data-category="project-management" data-tags="teams productivity automation">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">ClickUp Brain</div>
+      <div class="tool-cat">📊 Project Management</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI-powered project management and productivity</div>
+  <div class="tool-tags"><span class="tool-tag">AI task creation</span><span class="tool-tag">Progress summaries</span><span class="tool-tag">Automated reports</span><span class="tool-tag">Natural language search</span><span class="tool-tag">teams</span><span class="tool-tag">productivity</span><span class="tool-tag">automation</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://clickup.com/brain" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="monday.com ai" data-category="project-management" data-tags="teams productivity work management">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Monday.com AI</div>
+      <div class="tool-cat">📊 Project Management</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI features for project and work management</div>
+  <div class="tool-tags"><span class="tool-tag">AI task summaries</span><span class="tool-tag">Formula generation</span><span class="tool-tag">Sentiment analysis</span><span class="tool-tag">Smart recommendations</span><span class="tool-tag">teams</span><span class="tool-tag">productivity</span><span class="tool-tag">work management</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://monday.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="surfer seo" data-category="marketing" data-tags="seo content optimization marketing">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Surfer SEO</div>
+      <div class="tool-cat">📈 Marketing & SEO</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI-powered on-page SEO optimization</div>
+  <div class="tool-tags"><span class="tool-tag">Content editor</span><span class="tool-tag">SERP analyzer</span><span class="tool-tag">Keyword research</span><span class="tool-tag">Audit tool</span><span class="tool-tag">seo</span><span class="tool-tag">content optimization</span><span class="tool-tag">marketing</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://surferseo.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="jasper ai" data-category="marketing" data-tags="marketing copywriting enterprise">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Jasper AI</div>
+      <div class="tool-cat">📈 Marketing & SEO</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI content platform for marketing teams</div>
+  <div class="tool-tags"><span class="tool-tag">Brand voice</span><span class="tool-tag">Content templates</span><span class="tool-tag">Team collaboration</span><span class="tool-tag">SEO mode</span><span class="tool-tag">marketing</span><span class="tool-tag">copywriting</span><span class="tool-tag">enterprise</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.jasper.ai" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="tableau pulse" data-category="data" data-tags="business intelligence dashboard enterprise">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Tableau Pulse</div>
+      <div class="tool-cat">📐 Data & Analytics</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI-driven analytics and insights delivery</div>
+  <div class="tool-tags"><span class="tool-tag">AI insights</span><span class="tool-tag">Automated metrics</span><span class="tool-tag">Smart alerts</span><span class="tool-tag">Natural language queries</span><span class="tool-tag">business intelligence</span><span class="tool-tag">dashboard</span><span class="tool-tag">enterprise</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.tableau.com/products/pulse" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="autodesk forma" data-category="construction" data-tags="architecture urban planning">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Autodesk Forma</div>
+      <div class="tool-cat">🏗️ Construction & Architecture</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI for early-stage building design and urban planning</div>
+  <div class="tool-tags"><span class="tool-tag">AI design optimization</span><span class="tool-tag">Wind/sun analysis</span><span class="tool-tag">Density planning</span><span class="tool-tag">3D modeling</span><span class="tool-tag">architecture</span><span class="tool-tag">urban planning</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.autodesk.com/products/forma/overview" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="buildx" data-category="construction" data-tags="cost estimation bidding contractor">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Buildx</div>
+      <div class="tool-cat">🏗️ Construction & Architecture</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI for construction cost estimation and bidding</div>
+  <div class="tool-tags"><span class="tool-tag">AI cost estimation</span><span class="tool-tag">Bid analysis</span><span class="tool-tag">Risk assessment</span><span class="tool-tag">Quantity takeoff</span><span class="tool-tag">cost estimation</span><span class="tool-tag">bidding</span><span class="tool-tag">contractor</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.buildx.ai" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="sudowrite" data-category="writing" data-tags="fiction creative writing storytelling">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Sudowrite</div>
+      <div class="tool-cat">✍️ Writing & Content</div>
+    </div>
+    <span class="pricing-badge paid">paid</span>
+  </div>
+  <div class="tool-tagline">AI writing assistant for fiction authors</div>
+  <div class="tool-tags"><span class="tool-tag">Story planning</span><span class="tool-tag">Character arcs</span><span class="tool-tag">Prose generation</span><span class="tool-tag">Style matching</span><span class="tool-tag">fiction</span><span class="tool-tag">creative writing</span><span class="tool-tag">storytelling</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.sudowrite.com" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="tome" data-category="design" data-tags="presentations slides business">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Tome</div>
+      <div class="tool-cat">🎨 Design & Creative</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI presentation generator</div>
+  <div class="tool-tags"><span class="tool-tag">AI presentations</span><span class="tool-tag">Auto layouts</span><span class="tool-tag">Image generation</span><span class="tool-tag">Data charts</span><span class="tool-tag">presentations</span><span class="tool-tag">slides</span><span class="tool-tag">business</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://tome.app" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+<div class="tool-card" data-name="buildt" data-category="code" data-tags="code search codebase understanding developer tools">
+  <div class="tool-header">
+    <div>
+      <div class="tool-name">Buildt</div>
+      <div class="tool-cat">💻 Code & Development</div>
+    </div>
+    <span class="pricing-badge freemium">freemium</span>
+  </div>
+  <div class="tool-tagline">AI code search and codebase understanding</div>
+  <div class="tool-tags"><span class="tool-tag">Semantic code search</span><span class="tool-tag">Codebase chat</span><span class="tool-tag">Dependency mapping</span><span class="tool-tag">AI explanations</span><span class="tool-tag">code search</span><span class="tool-tag">codebase understanding</span><span class="tool-tag">developer tools</span></div>
+  <div class="tool-footer">
+    <span class="tool-cat">★★★★</span>
+    <a href="https://www.buildt.ai" target="_blank" rel="noopener" class="tool-link">Visit →</a>
+  </div>
+</div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <p>21 AI tools &middot; Updated 2026-07-08 &middot;
+    <a href="https://github.com">Powered by AI Directory</a></p>
+  </div>
+</footer>
+<script>
+// Live search
+const search = document.getElementById('search');
+const grid = document.getElementById('toolsGrid');
+const cards = grid.querySelectorAll('.tool-card');
+search.addEventListener('input', e => {
+  const q = e.target.value.toLowerCase();
+  cards.forEach(c => {
+    const match = c.dataset.name.includes(q) || c.dataset.tags.includes(q) || c.dataset.category.includes(q);
+    c.style.display = match ? '' : 'none';
+  });
+});
+
+// Category filter pills
+const pills = document.querySelectorAll('.cat-pill');
+pills.forEach(pill => {
+  pill.addEventListener('click', () => {
+    pills.forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const filter = pill.dataset.filter;
+    cards.forEach(c => {
+      const match = filter === 'all' || c.dataset.category === filter;
+      c.style.display = match ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": "construction",
+      "name": "Construction & Architecture",
+      "icon": "🏗️",
+      "description": "AI tools for construction management, BIM, site planning, and architecture",
+      "keywords": ["construction", "architecture", "bim", "site planning", "engineering", "contractor"]
+    },
+    {
+      "id": "project-management",
+      "name": "Project Management",
+      "icon": "📊",
+      "description": "AI-powered project tracking, team coordination, and workflow automation",
+      "keywords": ["project management", "task tracking", "agile", "workflow", "gantt", "kanban"]
+    },
+    {
+      "id": "design",
+      "name": "Design & Creative",
+      "icon": "🎨",
+      "description": "AI tools for graphic design, UI/UX, illustration, and creative workflows",
+      "keywords": ["design", "ui", "ux", "graphic", "illustration", "branding", "logo", "creative"]
+    },
+    {
+      "id": "writing",
+      "name": "Writing & Content",
+      "icon": "✍️",
+      "description": "AI writing assistants, content generators, and editing tools",
+      "keywords": ["writing", "content", "blog", "copywriting", "editing", "grammar", "seo"]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & SEO",
+      "icon": "📈",
+      "description": "AI for digital marketing, SEO optimization, and social media automation",
+      "keywords": ["marketing", "seo", "social media", "advertising", "email marketing", "ppc"]
+    },
+    {
+      "id": "code",
+      "name": "Code & Development",
+      "icon": "💻",
+      "description": "AI coding assistants, code generation, and developer tools",
+      "keywords": ["code", "coding", "development", "developer", "programming", "ide", "git"]
+    },
+    {
+      "id": "data",
+      "name": "Data & Analytics",
+      "icon": "📐",
+      "description": "AI tools for data analysis, visualization, and business intelligence",
+      "keywords": ["data", "analytics", "visualization", "business intelligence", "dashboard", "charts"]
+    },
+    {
+      "id": "video",
+      "name": "Video & Animation",
+      "icon": "🎬",
+      "description": "AI video generation, editing, and animation tools",
+      "keywords": ["video", "animation", "editing", "motion", "film", "streaming"]
+    },
+    {
+      "id": "sales",
+      "name": "Sales & CRM",
+      "icon": "💰",
+      "description": "AI for sales teams: lead generation, CRM, forecasting, and outreach",
+      "keywords": ["sales", "crm", "lead", "pipeline", "forecasting", "outreach", "prospecting"]
+    },
+    {
+      "id": "hr",
+      "name": "HR & Recruiting",
+      "icon": "👥",
+      "description": "AI tools for hiring, recruiting, onboarding, and people management",
+      "keywords": ["hr", "recruiting", "hiring", "onboarding", "talent", "resume", "interview"]
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Accounting",
+      "icon": "🏦",
+      "description": "AI for accounting, invoicing, bookkeeping, and financial analysis",
+      "keywords": ["finance", "accounting", "invoicing", "bookkeeping", "tax", "budget", "audit"]
+    },
+    {
+      "id": "education",
+      "name": "Education & Learning",
+      "icon": "🎓",
+      "description": "AI tutoring, course creation, and learning platforms",
+      "keywords": ["education", "learning", "tutoring", "course", "training", "lms", "study"]
+    },
+    {
+      "id": "legal",
+      "name": "Legal & Compliance",
+      "icon": "⚖️",
+      "description": "AI tools for legal research, contract analysis, and compliance",
+      "keywords": ["legal", "law", "contract", "compliance", "regulation", "attorney", "legal research"]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare & Medical",
+      "icon": "🏥",
+      "description": "AI for medical professionals: diagnostics, scheduling, patient management",
+      "keywords": ["healthcare", "medical", "patient", "diagnosis", "clinical", "telehealth", "pharmacy"]
+    }
+  ]
+}
