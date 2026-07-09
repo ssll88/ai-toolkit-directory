@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-07-08T00:00:00Z",
+  "last_updated": "2026-07-09T06:00:24.310818+00:00",
   "tools": [
     {
       "id": "procore",
@@ -462,6 +462,384 @@
         "inbound",
         "sales automation"
       ]
+    },
+    {
+      "id": "tensorflow",
+      "name": "Tensorflow",
+      "tagline": "An Open Source Machine Learning Framework for Everyone",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "c++"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "promptschat",
+      "name": "Prompts.Chat",
+      "tagline": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and op",
+      "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "html"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "transformers",
+      "name": "Transformers",
+      "tagline": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text,",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+      "url": "https://github.com/huggingface/transformers",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "python"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "pytorch",
+      "name": "Pytorch",
+      "tagline": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "url": "https://github.com/pytorch/pytorch",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "python"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "llms-from-scratch",
+      "name": "Llms From Scratch",
+      "tagline": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "description": "Implement a ChatGPT-like LLM in PyTorch from scratch, step by step",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "jupyter notebook"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "ml-for-beginners",
+      "name": "Ml For Beginners",
+      "tagline": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+      "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+      "url": "https://github.com/microsoft/ML-For-Beginners",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "jupyter notebook"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "openclaw",
+      "name": "Openclaw",
+      "tagline": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "typescript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "tagline": "An agentic skills framework & software development methodology that works.",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "url": "https://github.com/obra/superpowers",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "shell"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "hermes-agent",
+      "name": "Hermes Agent",
+      "tagline": "The agent that grows with you",
+      "description": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "python"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "n8n",
+      "name": "N8N",
+      "tagline": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "typescript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "autogpt",
+      "name": "Autogpt",
+      "tagline": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provi",
+      "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "python"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "javaguide",
+      "name": "Javaguide",
+      "tagline": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "javascript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "tagline": "Production-ready platform for agentic workflow development.",
+      "description": "Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "typescript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "tagline": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "typescript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "open-webui",
+      "name": "Open Webui",
+      "tagline": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "url": "https://github.com/open-webui/open-webui",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "python"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "ecc",
+      "name": "Ecc",
+      "tagline": "The agent harness performance optimization system. Skills, instincts, memory, security, and research",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "javascript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "tagline": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models",
+      "description": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "url": "https://github.com/ollama/ollama",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "go"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "langchain",
+      "name": "Langchain",
+      "tagline": "The agent engineering platform.",
+      "description": "The agent engineering platform.",
+      "url": "https://github.com/langchain-ai/langchain",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-09",
+      "tags": [
+        "open-source",
+        "github",
+        "python"
+      ],
+      "source": "github-trending"
     }
   ]
 }
