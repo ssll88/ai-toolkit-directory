@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-07-11T09:35:25.456487+00:00",
+  "last_updated": "2026-07-12T09:37:24.558261+00:00",
   "tools": [
     {
       "id": "procore",
@@ -838,6 +838,27 @@
         "open-source",
         "github",
         "python"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "librecode",
+      "name": "Librecode",
+      "tagline": "LibreCode - A Ollama cursor like coding / Reversing Interface",
+      "description": "LibreCode - A Ollama cursor like coding / Reversing Interface",
+      "url": "https://github.com/re4/LibreCode",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-07-12",
+      "tags": [
+        "open-source",
+        "github",
+        "c#"
       ],
       "source": "github-trending"
     }
