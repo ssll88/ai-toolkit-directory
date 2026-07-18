@@ -2,6 +2,12 @@
 
 A multi-niche AI tools directory website that's automatically maintained by AI agents via Hermes cron jobs.
 
+## Quality Policy
+
+- Directory data is refreshed automatically.
+- Paid or affiliate placements are not accepted.
+- Tools receive human review before public listing.
+
 ## What It Does
 
 - **Curates** AI tools across 14+ professional categories (construction, design, code, marketing, etc.)
