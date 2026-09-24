@@ -861,6 +861,30 @@
         "c#"
       ],
       "source": "github-trending"
+    },
+    {
+      "id": "agent-qa",
+      "name": "Agent QA",
+      "tagline": "Natural-language QA harness with memory",
+      "description": "Source-available CLI and MCP server for running natural-language web and mobile regression tests with run memory and same-run recovery from UI changes. The CLI has no software fee for permitted use; model, browser, or device-provider charges may apply.",
+      "url": "https://github.com/vostride/agent-qa",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Web and mobile tests",
+        "CLI and MCP server",
+        "Run memory",
+        "Self-healing execution"
+      ],
+      "rating": 0.4,
+      "added": "2026-09-19",
+      "tags": [
+        "testing",
+        "qa",
+        "browser-automation",
+        "mcp"
+      ],
+      "source": "manual-submission"
     }
   ]
 }
