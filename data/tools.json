@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-09-27T14:37:13.417892+00:00",
+  "last_updated": "2026-09-28T17:29:29.755904+00:00",
   "tools": [
     {
       "id": "procore",
@@ -859,6 +859,27 @@
         "open-source",
         "github",
         "c#"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail",
+      "tagline": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you nev",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-09-28",
+      "tags": [
+        "open-source",
+        "github",
+        "javascript"
       ],
       "source": "github-trending"
     }
