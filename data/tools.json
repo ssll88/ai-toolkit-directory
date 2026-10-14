@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-10-13T16:48:25.886703+00:00",
+  "last_updated": "2026-10-14T14:24:39.266563+00:00",
   "tools": [
     {
       "id": "procore",
@@ -880,6 +880,27 @@
         "open-source",
         "github",
         "javascript"
+      ],
+      "source": "github-trending"
+    },
+    {
+      "id": "rea",
+      "name": "Rea",
+      "tagline": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Open source",
+        "Self-hosted"
+      ],
+      "rating": 5.0,
+      "added": "2026-10-14",
+      "tags": [
+        "open-source",
+        "github",
+        "typescript"
       ],
       "source": "github-trending"
     }
