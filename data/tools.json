@@ -903,6 +903,30 @@
         "typescript"
       ],
       "source": "github-trending"
+    },
+    {
+      "id": "agent-qa",
+      "name": "agent-qa",
+      "tagline": "Self-improving web/mobile QA with memidex memory",
+      "description": "Natural-language web, Android and iOS tests through a CLI, dashboard and MCP tools, with memidex memory and self-improvement. FSL-1.1-ALv2; no software fee for permitted use, while configured model, browser or device providers may charge separately.",
+      "url": "https://github.com/vostride/agent-qa",
+      "category": "code",
+      "pricing": "free",
+      "features": [
+        "Web, Android and iOS tests",
+        "CLI, dashboard and MCP",
+        "memidex memory",
+        "Self-improvement"
+      ],
+      "rating": 0.4,
+      "added": "2026-09-19",
+      "tags": [
+        "testing",
+        "qa",
+        "browser-automation",
+        "mcp"
+      ],
+      "source": "manual-submission"
     }
   ]
 }
